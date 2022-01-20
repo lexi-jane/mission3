@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            @ViewData["Title"]
+        </title>
+        <link rel="icon" type="image/x-icon" href="img/waipio_valley.jpeg">
+
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        @*Navigation Bar*@
+        <nav>
+            <a asp-controller="Blah" asp-action="Index">Home</a>
+            <a asp-controller="Blah" asp-action="Calculator">Grade Calculator</a>
+
+        </nav>
+
+        <div>
+            @RenderBody()
+        </div>
+
+        <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+        <script src="js/calculator.js"></script>
+        <script src="lib/bootsrap/js/bootstrap.js/bootstrap.min.js"></script>
+    </body>
+</html>
